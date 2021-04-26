@@ -1,0 +1,888 @@
+body{
+    background: #aaa;
+}
+
+body,
+section,
+header,
+.container,
+main,
+div,
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, 游ゴシック体, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #fff;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    color: #ddd;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    padding: 0 10px;
+}
+
+.title{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 2.8rem;
+    font-family: serif;
+    color: #f5c412;
+    border-bottom: solid 2px #f5c412;
+    display: inline-block;
+    padding-bottom: -2px;
+}
+
+/* ヘッダー部分ここから */
+.top-bgi{
+    background-image: url(../images/sec2-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.top-bgi .cover{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 1;
+}
+
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-content a{
+    margin-right: 30px;
+}
+
+.header-content a img{
+    width: 150px;
+}
+
+.header-tell p{
+    text-decoration: underline;
+    font-size: 0.7rem;
+}
+
+.header-tell a{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.header-list{
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}   
+
+/* About部分ここから */
+#about{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#about .container{
+    z-index: 1;
+}
+
+.contact-btn{
+    background-color: rgb(229, 192, 8);
+    border: solid 3px #fff;
+    display: inline-block;
+    text-align: center;
+    right: 30px;
+    top: 150px;
+    position: fixed;
+    z-index: 100;
+}
+
+.contact-btn img{
+    width: 25px;
+    padding: 7px 0;
+}
+
+.phone-nubmer {
+    display: flex;
+    padding: 0 3px;
+}
+
+.phone-nubmer p{
+    writing-mode: vertical-rl;
+    padding-bottom: 7px;
+}
+
+.number{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#about .container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-name h2{
+    font-family: serif;
+}
+
+.about-name h1{
+    font-size: 2.8rem;
+    font-family: serif;
+    color: #f5c412;
+    margin-bottom: 20px;
+}
+
+.about-text p{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    text-align: initial;
+}
+
+/* 料理部分ここから */
+#food{
+    background-image: url(../images/unnamed.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#food .cover{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 1;
+}
+
+#food .container{
+    position: relative;
+}
+
+.food-text{
+    margin-top: 100px;
+    border: solid 3px #fff;
+    display: inline-block;
+    text-align: center;
+    left: 5%;
+    position: absolute;
+}
+
+.food-text p{
+    writing-mode: vertical-rl;
+    padding: 10px 7px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px #222;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+
+.food-list{
+    margin: 50px auto 0;    
+    width: 80%;
+}
+
+.food1,.food2,.food3{
+    text-align: center;
+}
+
+.food-list h3{
+    font-size: 1.8rem;
+}
+
+.food-list p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.food-list img{
+    width: 500px;
+    height: 300px;
+}
+
+.food-colum{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.food3{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.food3 img{
+    width: 600px;
+}
+
+/* ドリンク部分ここから */
+#drink{
+    background-image: url(../images/s3_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#drink .cover{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 1;
+}
+
+/* 利用シーン部分ここから */
+#scene{
+    background-image: url(../images/個室.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+#scene .cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    padding-top: 40px;
+}
+
+#scene .container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.scene-title{
+    padding: 30px 0;
+    font-size: 2.8rem;
+    font-family: serif;
+    color: rgb(181, 42, 3);
+    text-shadow: 1px 1px 1px #222;
+}
+
+.scene-text{
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#scene p{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+/* アクセス部分ここから */
+#access{
+    background-image: url(../images/木目.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.station{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.station p{
+    color: #000; 
+    font-size: 1.1rem;  
+}
+
+.map{
+    text-align: center;
+}
+
+.map2,.map3{
+    display: none;
+}
+
+iframe{
+    margin: 0 auto;
+}
+
+/* フッター部分ここから */
+footer{
+    background-image: url(../images/木目2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .cover{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 1;
+}
+
+footer .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-top{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-top img{
+    margin-right: 100px;
+}
+
+.footer-tell .info{
+    text-decoration: underline;
+}
+
+.footer-tell a{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.footer-content{
+    display: flex;
+    border-bottom: 2px solid #fff;
+    padding: 30px 0 30px 20px;
+}
+
+.footer-category{
+    font-size: 1.4rem;
+    margin-right: 70px;
+    width: 200px;
+}
+
+.footer-text{
+    font-size: 1.4rem;
+}
+
+.copylight{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1025px) {
+/* ヘッダー部分ここから */
+    .top-bgi{
+        height: 55vh;
+    }
+
+    /* 料理部分ここから */
+    .food-text p{
+        font-size: 1.1rem;
+    }
+
+    .food-list p{
+        font-size: 1rem;
+    }
+
+    .food-list img{
+        width: 350px;
+        height: 200px;
+    }
+
+    /* 利用シーン部分ここから */
+    #scene{
+        height: 45vh;
+    }
+
+    .scene-title{
+        padding: 30px 0;
+        font-size: 2.6rem;
+    }
+    
+    .scene-text{
+        text-align: left;
+        width: 60%;
+    }
+
+    #scene p{
+        font-size: 1.2rem;
+        line-height: 2.0rem;
+    }
+
+    /* フッター部分ここから */
+    .footer-category{
+        font-size: 1.2rem;
+    }
+    
+    .footer-text{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 796px) {
+    .top-bgi{
+        height: 65vh;
+    }
+
+    #about p{
+        font-size: 1.1rem;
+    }
+
+    /* 料理部分ここから */
+    .food-text{
+        left: 3%;
+    }
+
+    .food-list{
+        text-align: center;
+    }
+
+    .food-colum{
+        display: block;
+        margin-left: 0;
+    }
+
+    .food1,.food2,.food3{
+        margin-left: 40px;
+    }
+
+    .food1,.food2{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .food-list br{
+        display: none;
+    }
+
+    /* 利用シーン部分ここから */
+    #scene{
+        height: 55vh;
+    }
+
+    .scene-text{
+        width: 65%;
+    }
+
+    #scene p{
+        font-size: 1rem;
+    }
+
+    /* アクセス部分ここから */
+    .map2{
+        display: block;
+    }
+
+    .map1,.map3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    /* ヘッダー部分ここから */
+    .top-bgi{
+        height: 90vh;
+    }
+    .header-list{
+        padding: 0 30px;
+        display: none;
+    }
+
+    /* About部分ここから */
+    #about{
+        padding-top: 20px;
+    }
+
+    #about .container{
+        width: 85%;
+    }
+
+    .about-name h1{
+        font-size: 2.4rem;
+    }
+
+    .about-name h2{
+        font-size: 1.4rem;
+    }
+
+    .about-text p{
+        font-size: 1rem;
+    }
+
+    /* 料理部分ここから */
+    #food{
+        background-image: url(../images/gVr7tUoIuldPkWF1619015154_1619015164.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .food-text{
+        left: 3%;
+    }
+
+    .food-list{
+        text-align: center;
+    }
+
+    .food-colum{
+        display: block;
+        margin-left: 0;
+    }
+
+    .food1,.food2,.food3{
+        margin-left: 40px;
+        display: block;
+    }
+
+    .food1,.food2{
+        margin-bottom: 30px;
+    }
+
+    /* 利用シーン部分ここから */
+    #scene{
+        height: 70vh;
+    }
+
+    .scene-title{
+        font-size: 2.2rem;
+    }
+
+    .scene-text{
+        width: 80%;
+    }
+
+    #scene p{
+        font-size: 1.0rem;
+    }
+
+    .scene-text br{
+        display: none;
+    }
+
+    /* アクセス部分ここから */
+    .map3{
+        display: block;
+    }
+
+    .map1,.map2{
+        display: none;
+    }
+
+    /* フッター部分ここから */
+    footer .container{
+        width: 95%;
+    }
+
+    .footer-top img{
+        margin-right: 50px;
+        width: 150px;
+    }
+
+    .footer-tell a{
+        font-size: 1.2rem;
+    }
+
+    .footer-content{
+        justify-content: start;
+    }
+
+    .footer-content p{
+        font-size: 1rem;
+    }
+
+    .footer-category{
+        width: 150px;
+        margin-right: 50px;
+    }
+
+    .footer-text{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title{
+        padding-top: 20px;
+    }
+
+    .title h1{
+        font-size: 2.4rem;
+    }
+
+    .top-bgi{
+        background-image: url(../images/hQ8uST14NXgPXtI1619188110_1619188135.png);
+        height: 73vh;
+    }
+
+    .header-content a img{
+        width: 120px;
+    }
+
+    .header-list{
+        padding: 0 10px;
+    }
+
+    .header-list li a{
+        font-size: 0.8rem;
+    }
+
+    /* About部分ここから */
+    #about{
+        padding-bottom: 0;
+    }
+    .contact-btn{
+        right: 2%;
+    }
+
+    .contact-btn img{
+        width: 20px;
+    }
+
+    .phone-nubmer p{
+        font-size: 12px;
+    }
+
+    .phone-nubmer .number{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .about-name h1{
+        font-size: 2.2rem;
+    }
+
+    .about-name h2{
+        font-size: 1.2rem;
+    }
+
+    .about-text p{
+        font-size: 0.9rem;
+        line-height: 2.0rem;
+    }
+
+    .about-text p:nth-child(2){
+        display: none;
+    }
+
+    /* 料理部分ここから */
+    .food-text{
+        margin-top: 70px;
+    }
+
+    .food-text p{
+        font-size: 1rem;
+    }
+
+    .food-list{
+        margin-top: 25px;
+    }
+
+    .food-list h3{
+        font-size: 1.5rem;
+    }
+
+    .food-list p{
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+
+    .food-list img{
+        width: 250px;
+        height: 150px;
+    }
+
+    .food1,.food2{
+        margin-bottom: 10px;
+    }
+
+    .food3{
+        margin-top: 0;
+    }
+
+    .copylight{
+        font-size: 0.7rem!important;
+    }
+
+    /* 利用シーン部分ここから */
+    #scene {
+        height: 65vh;
+    }
+    #scene .cover{
+        padding-top: 20px;
+    }
+
+    #scene .container{
+        width: 90%;
+    }
+
+    .scene-title{
+        font-size: 2.0rem;
+        padding: 20px 0;
+    }
+
+    /* アクセス部分ここから */
+    .station p{
+        font-size: 0.9rem;
+    }
+
+    /* フッター部分ここから */
+    footer .container{
+        width: 98%;
+        padding: 0;
+    }
+
+    footer .container p{
+        font-size: 0.9rem;
+    }
+
+    .footer-top{
+        margin-left: 20px;
+    }
+
+    .footer-top img{
+        margin-right: 30px;
+        width: 120px;
+    }
+
+    .footer-tell p{
+        font-size: 0.8rem!important;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .top-bgi{
+        height: 80vh;
+    }
+
+    /* アバウト部分ここから */
+    #about .container{
+        width: 93%;
+    }
+
+    /* 利用シーン部分ここから */
+    #scene{
+        height: 70vh;
+    }
+
+    .scene-title {
+        font-size: 1.8rem;
+        padding: 10px 0;
+    }
+
+    .scene-text{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 330px){
+    .top-bgi{
+        height: 90vh;
+    }
+
+    .header-content a img{
+        width: 100px;
+    }
+
+    .header-tell a{
+        font-size: 1rem;
+    }
+
+    /* アバウト部分ここから */
+
+    .about-name h2{
+        font-size: 1.1rem;
+    }
+
+    .about-name h1{
+        font-size: 1.8rem;
+    }
+
+    .about-text p{
+        font-size: 0.8rem;
+    }
+
+    /* 料理部分ここから */
+
+    .food-text p{
+        padding: 5px 5px;
+        font-size: 0.9rem;
+    }
+
+    .food-list h3{
+        font-size: 1.2rem;
+    }
+
+    .food-list p{
+        font-size: 0.7rem;
+    }
+
+    .food-list img{
+        width: 220px;
+        height: 120px;
+    }
+
+    .food2-text br,.food3-text br{
+        display: none;
+    }
+
+    /* 利用シーン部分ここから */
+    #scene{
+
+    }
+
+    .scene-title{
+        font-size: 1.6rem;
+    }
+
+    #scene p{
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    /* アクセス部分ここから */
+    .station p{
+        font-size: 0.8rem;
+    }
+
+}
+
